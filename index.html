@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saad's Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Fredoka One' rel='stylesheet'>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/saad-logo.png" alt="Saad's Logo" class="logo">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Skills</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p>Front-End Developer</p>
+                <h1>Hi, I am <span>Saad Aulakh</span><br>from Maryland</h1>
+            </div>
+        </div>
+    </div>
+    <!-----------about me---------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/laptop.jpg" alt="Pic of laptop">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="subtitle">About Me</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam non molestie nisi. Phasellus accumsan blandit tellus, vitae rutrum tellus vehicula et. Etiam tincidunt porttitor euismod. Sed augue libero, venenatis ac sapien nec, commodo condimentum turpis. Aliquam laoreet dolor malesuada iaculis cursus. Quisque sed ullamcorper leo. Morbi porttitor lacus vel pretium pellentesque. Sed scelerisque at turpis vel pretium. Pellentesque non nisl eros. Donec pellentesque tellus urna, ut ullamcorper libero suscipit et. Phasellus at lorem luctus turpis congue accumsan. Nullam vitae ante sem. Aliquam malesuada mauris nibh, ut sollicitudin mi sollicitudin eu. Vestibulum rhoncus lectus ut sem pharetra, id semper ipsum pulvinar.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2020-2022</span><br>AA in CMSC from Montgomery College</li>
+                            <li><span>2022-2026</span><br>BA in CMSC from Drexel University</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-----------portfolio---------->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="subtitle">My Work</h1>
+        </div>
+    </div>
+</body>
+</html>
