@@ -7,67 +7,116 @@
     <title>Saad's Portfolio</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="images/s-icon.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css">
     <script src="script.js"></script>
     <link href='https://fonts.googleapis.com/css?family=Fredoka One' rel='stylesheet'>
 </head>
 <body>
-    <div id="header">
-        <div class="container">
-            <nav>
-                <img src="images/saad-logo.png" alt="Saad's Logo" class="logo">
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Skills</a></li>
-                    <li><a href="#">Portfolio</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </nav>
-            <div class="header-text">
-                <p>Front-End Developer</p>
-                <h1>Hi, I am <span>Saad Aulakh</span><br>from Maryland</h1>
-            </div>
-        </div>
-    </div>
-    <!-----------about me---------->
-    <div id="about">
-        <div class="container">
-            <div class="row">
-                <div class="about-col-1">
-                    <img src="images/laptop.jpg" alt="Pic of laptop">
-                </div>
-                <div class="about-col-2">
-                    <h1 class="subtitle">About Me</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam non molestie nisi. Phasellus accumsan blandit tellus, vitae rutrum tellus vehicula et. Etiam tincidunt porttitor euismod. Sed augue libero, venenatis ac sapien nec, commodo condimentum turpis. Aliquam laoreet dolor malesuada iaculis cursus. Quisque sed ullamcorper leo. Morbi porttitor lacus vel pretium pellentesque. Sed scelerisque at turpis vel pretium. Pellentesque non nisl eros. Donec pellentesque tellus urna, ut ullamcorper libero suscipit et. Phasellus at lorem luctus turpis congue accumsan. Nullam vitae ante sem. Aliquam malesuada mauris nibh, ut sollicitudin mi sollicitudin eu. Vestibulum rhoncus lectus ut sem pharetra, id semper ipsum pulvinar.</p>
-                    <div class="tab-titles">
-                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-                        <p class="tab-links" onclick="opentab('education')">Education</p>
-                    </div>
-                    <div class="tab-contents active-tab" id="skills">
-                        <ul>
-                            <li>HTML</li>
-                            <li>CSS</li>
-                            <li>JavaScript</li>
-                        </ul>
-                    </div>
-                    <div class="tab-contents" id="education">
-                        <ul>
-                            <li><span>2020-2022</span><br>AA in CMSC from Montgomery College</li>
-                            <li><span>2022-2026</span><br>BA in CMSC from Drexel University</li>
-                        </ul>
-                    </div>
+    <section id="home">
+        <div id="header">
+            <div class="container">
+                <nav>
+                    <img src="images/saad-logo.png" alt="Saad's Logo" class="logo">
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="header-text">
+                    <p>Front-End Developer</p>
+                    <h1>Hi, I am <span>Saad Aulakh</span><br>from Maryland</h1>
+                        <a href="#about" class="about-button">
+                            <span>Get to know me!</span>
+                        </a>
+
                 </div>
             </div>
         </div>
-    </div>
-    <!-----------portfolio---------->
-    <div id="portfolio">
-        <div class="container">
-            <h1 class="subtitle">My Work</h1>
-            <div class="work-list">
-                <div class="work"></div>
+    </section>
+        <!-----------about me---------->
+    <section id="about">
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="images/laptop.jpg" alt="Pic of laptop">
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="subtitle">About Me</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam non molestie nisi. Phasellus accumsan blandit tellus, vitae rutrum tellus vehicula et. Etiam tincidunt porttitor euismod. Sed augue libero, venenatis ac sapien nec, commodo condimentum turpis. Aliquam laoreet dolor malesuada iaculis cursus. Quisque sed ullamcorper leo. Morbi porttitor lacus vel pretium pellentesque. Sed scelerisque at turpis vel pretium. Pellentesque non nisl eros. Donec pellentesque tellus urna, ut ullamcorper libero suscipit et. Phasellus at lorem luctus turpis congue accumsan. Nullam vitae ante sem. Aliquam malesuada mauris nibh, ut sollicitudin mi sollicitudin eu. Vestibulum rhoncus lectus ut sem pharetra, id semper ipsum pulvinar.</p>
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                        </div>
+
+                        <div class="tab-contents active-tab tech-stack-icons" id="skills">
+                            <div>
+                                <div class="tech-icon">
+                                    <i class="devicon-html5-plain colored icon"></i>
+                                    <span class="icon-name">HTML</span>
+                                </div>
+                                <div class="tech-icon">
+                                    <i class="devicon-css3-plain colored icon"></i>
+                                    <span class="icon-name">CSS</span>
+                                </div>
+                                <div class="tech-icon">
+                                    <i class="devicon-javascript-plain colored icon"></i>
+                                    <span class="icon-name">JAVASCRIPT</span>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="tech-icon">
+                                    <i class="devicon-react-original colored icon"></i>
+                                    <span class="icon-name">REACT</span>
+                                </div>
+                                <div class="tech-icon">
+                                    <i class="devicon-nodejs-plain colored icon"></i>
+                                    <span class="icon-name">NODEJS</span>
+                                </div>
+                                <div class="tech-icon">
+                                    <i class="devicon-git-plain colored icon"></i>
+                                    <span class="icon-name">GIT</span>
+                                </div>
+                            </div>
+                            <div>
+                                    <div class="tech-icon">
+                                        <i class="devicon-npm-original-wordmark colored icon"></i>
+                                        <span class="icon-name">NPM</span>
+                                    </div>
+                                    <div class="tech-icon">
+                                        <i class="devicon-webpack-plain colored icon"></i>
+                                        <span class="icon-name">WEBPACK</span>
+                                    </div>
+                                    <div class="tech-icon">
+                                        <i class="devicon-github-plain colored icon"></i>
+                                        <span class="icon-name">GITHUB</span>
+                                    </div>
+                            </div>
+                                
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>2020-2022</span><br>AA in CMSC from Montgomery College</li>
+                                <li><span>2022-2026</span><br>BA in CMSC from Drexel University</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
+    </section>
+        <!-----------portfolio---------->
+    <section id="portfolio">
+        <div id="portfolio">
+            <div class="container">
+                <h1 class="subtitle">My Work</h1>
+                <div class="work-list">
+                    <div class="work"></div>
+                </div>
+            </div>
+        </div>
+    </section>
 </body>
 </html>

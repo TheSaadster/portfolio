@@ -4,11 +4,53 @@
     font-family: 'Fredoka One', sans-serif;
     font-weight: 100;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 body{
     background-color: #080808;
     color:#fff;
 }
+
+
+
+.about-button
+{
+    display: block;
+    width: 200px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 18px;
+    font-family: sans-serif;
+    text-decoration: none;
+    color: #bbb;
+    border: 2px solid #eee;
+    letter-spacing: 2px;
+    text-align: center;
+    position: relative;
+    transition: all .35s;
+  }
+  .about-button span{
+    position: relative;
+    z-index: 2;
+  }
+  
+  .about-button:after{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #9d00ff;
+    transition: all .35s;
+  }
+  .about-button:hover{
+    color: #fff;
+  }
+  .about-button:hover:after{
+    width: 100%;
+  }
+
 
 #header{
     width: 100%;
@@ -85,7 +127,7 @@ nav ul li a:hover::after{
 .row{
     display:flex;
     justify-content: space-between;
-    flex-wrap: wrap;
+    flex-direction: row;
 }
 
 .about-col-1{
@@ -132,30 +174,52 @@ nav ul li a:hover::after{
     bottom:-8px;
     transition: 0.5s;
 }
+
+.tech-icon{
+    flex-direction: column;
+    margin:10px 75px;
+    text-align: center;
+    width:60px;
+}
+.tech-stack-icons{
+    justify-content: space-around;
+    display:flex;
+    flex-direction: row;
+}
+.tech-icon, .tech-stack-icons {
+    align-items: center;
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 0;
+}
+.tech-icon .icon {
+    font-size: 50px;
+    margin: 5px;
+}
+
+.tech-icon.icon-name {
+    font-size: .8rem;
+}
+
 .tab-links.active-link::after{
     width:50%;
 }
-.tab-contents li{
-    font-family:'Courier New', Courier, monospace;
+
+.tab-contents ul li span{
+    font-family: 'Courier New', Courier, monospace;
+    color:#9b19ec;
 }
 
-.tab-contents ul li{
-    list-style: none;
-    margin:10px 0;
-}
-.tab-contents ul li span{
-    font-family:'Courier New', Courier, monospace;
-    color:#9e18f1;
-    font-size:14px;
-}
+
 .tab-contents{
     display:none;
 }
 .tab-contents.active-tab{
-    display:block;
+    display:flex;
 }
 
 /*-------portfolio-------*/
 #portfolio{
     padding: 50px;
+    
 }
